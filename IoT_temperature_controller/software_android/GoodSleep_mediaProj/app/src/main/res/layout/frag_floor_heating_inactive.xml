@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/room_heating_frag">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.001">
+
+            <TextView
+                android:text="@string/model_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_model_name"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <Button
+            android:text="@string/manual"
+            android:layout_height="wrap_content"
+            android:textColor="#D7D7D7"
+            android:background="@drawable/gray_box"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:id="@+id/btn_manual"
+            android:layout_weight="0.1"
+            android:clickable="false" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:background="@drawable/temper_no"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="350dp" />
+
+            <Button
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="200dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_temp_up"
+                android:layout_gravity="top|center_horizontal"
+                android:clickable="false" />
+
+            <TextView
+                android:text="클릭하여 모델명을 등록해주세요"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/tv_add_floor_model_num"
+                android:textSize="18sp"
+                android:clickable="true" />
+
+            <Button
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="200dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_temp_down"
+                android:layout_marginBottom="50dp"
+                android:clickable="false" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

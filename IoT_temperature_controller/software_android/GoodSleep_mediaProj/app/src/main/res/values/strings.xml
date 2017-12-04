@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">꿀잠프로젝트</string>
+    <string name="kakao_app_key">2043cd9abcb6d3f38e52598337fb0c29</string>
+    
+    <string name="adding_model">기기 등록</string>
+    <string name="option">옵션</string>
+    <string name="wake_up_time_setting">기상 시간 설정</string>
+
+    <string name="model_name">모델명 :  </string>
+    <string name="temperature">온도</string>
+    <string name="manual">수동</string>
+    <string name="automation">자동</string>
+    <string name="room_heating">난방</string>
+    <string name="floor_heating">매트</string>
+    <string name="data">데이터</string>
+    <string name="sleep_data">수면량</string>
+    <string name="used_room_data">난방 사용량</string>
+    <string name="used_floor_data">매트 사용량</string>
+
+    <string name="adding_address">주소를 등록하시겠습니까?</string>
+    <string name="id">계정</string>
+    <string name="address">주소</string>
+    <string name="address_insert_update">주소 등록/수정하기</string>
+    <string name="model_num">기기 모델명</string>
+    <string name="model_num_insert_update">기기 등록/수정하기</string>
+    <string name="logout">로그아웃</string>
+    <string name="leave">회원탈퇴</string>
+</resources>

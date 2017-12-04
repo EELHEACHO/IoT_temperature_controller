@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="@color/com_kakao_account_button_background"
+        android:id="@+id/data_toolbar"
+        android:elevation="0dp">
+
+        <ImageButton
+            android:id= "@+id/icBackIcon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/return_b"
+            android:background="@color/com_kakao_account_button_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wake_up_time_setting"
+            android:textColor="@color/basicPinkColor"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:paddingLeft="10dp"
+            android:id="@+id/alarm_setting" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="#FFFFFF"
+        android:padding="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:headerBackground="#f3acab"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner"
+                android:numbersBackgroundColor="#f3acab" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="8">
+
+                <ToggleButton
+                    android:text="일"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_sun"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="일"
+                    android:textOn="일"/>
+
+                <ToggleButton
+                    android:text="월"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_mon"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="월"
+                    android:textOn="월"/>
+
+                <ToggleButton
+                    android:text="화"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_tue"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="화"
+                    android:textOn="화"/>
+
+                <ToggleButton
+                    android:text="수"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_wed"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="수"
+                    android:textOn="수"/>
+
+                <ToggleButton
+                    android:text="목"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_thurs"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="목"
+                    android:textOn="목"/>
+
+                <ToggleButton
+                    android:text="금"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_fri"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="금"
+                    android:textOn="금"/>
+
+                <ToggleButton
+                    android:text="토"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_sat"
+                    android:layout_weight="1"
+                    android:background="@drawable/pink_box"
+                    android:textColor="#c6c5c5"
+                    android:textOff="토"
+                    android:textOn="토"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:weightSum="8"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:text="추천 설정"
+                    android:background="@drawable/round_pink"
+                    android:id="@+id/btn_recommend_alarm"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal|bold"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:text="저장"
+                    android:background="@drawable/round_pink"
+                    android:id="@+id/btn_save_alarm"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal|bold"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="60dp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarm_list"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.design.widget.CoordinatorLayout>
